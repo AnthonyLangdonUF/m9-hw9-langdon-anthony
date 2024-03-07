@@ -132,11 +132,30 @@ footer {
   color: var(--off-white);
 }
 
-@media screen and (min-width: 500px) {
-  .logo .headerlink {
-    flex-wrap: wrap;
-    flex: 1 0 100%;
-  
+@media only screen and (max-width: 500px) {
+  img {
+    height: auto;
+    max-width: 100%;
   }
-  article > img {display: block;margin:0 auto;}
+  nav {
+    flex-wrap: wrap;
+    display: flex;
+    padding: 0 25% 0 25%;
+    align-items: center;
+    text-align: center; 
+  }
+  head body {
+    margin: auto;
+  }
+
+  section.hero > .call-to-action {
+    font-size: 1.5rem;
+  }
+
+  nav > a:not(:first-of-type) {
+    margin: auto;
+    display: flex;
+    padding: 0 10px 0 10px;
+  }
+
 }
